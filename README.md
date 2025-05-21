@@ -21,19 +21,7 @@ DM Drop is a modern file-sharing web app that allows users to upload files and s
 - **Deployment:** TBD
 
 ## 📁 Project Structure
-app/
-├── (auth-pages)/ # Sign-up and sign-in logic & layout
-│ ├── sign-up/
-│ ├── sign-in/
-│ └── layout.js
-├── dashboard/ # Authenticated user dashboard
-├── page.js # Landing page
-components/
-├── Header.jsx # Responsive, dynamic nav bar
-├── Footer.jsx
-└── ui/ # ShadCN UI components
-utils/
-└── supabase/ # Supabase client logic
+<pre lang="markdown"> ```bash app/ ├── (auth-pages)/ # Sign-up and sign-in logic & layout │ ├── sign-up/ │ ├── sign-in/ │ └── layout.js ├── dashboard/ # Authenticated user dashboard ├── page.js # Landing page components/ ├── Header.jsx # Responsive, dynamic nav bar ├── Footer.jsx └── ui/ # ShadCN UI components utils/ └── supabase/ # Supabase client logic ``` </pre>
 
 
 ## 🧪 TODO
