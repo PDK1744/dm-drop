@@ -16,10 +16,7 @@ export default function LandingPage() {
           DM Drop lets creators share files, videos, and VIP content directly
           via private links.
         </p>
-        <Button
-          variant={"default"}>
-          🔥 Start Dropping — It’s Free
-        </Button>
+        <Button variant={"default"}>🔥 Start Dropping — It’s Free</Button>
       </section>
 
       {/* Section 2: How It Works */}
@@ -63,7 +60,7 @@ export default function LandingPage() {
       </section>
 
       {/* Section 4: Feature Highlights */}
-      <section className="w-full max-w-4xl text-center">
+      <section id="features" className="w-full max-w-4xl text-center">
         <h2 className={"text-2xl font-semibold mb-6 " + spaceGrotesk.className}>
           Features That Matter
         </h2>
@@ -85,12 +82,46 @@ export default function LandingPage() {
       </section>
 
       {/* Section 5: Pricing Teaser */}
-      <section className="w-full max-w-4xl text-center">
-        <h2 className={"text-2xl font-semibold mb-4 " + spaceGrotesk.className}>
+      <section className="w-full max-w-5xl text-center">
+        <h2 className={"text-3xl font-semibold mb-8 " + spaceGrotesk.className}>
           Simple Pricing
         </h2>
-        <p className="mb-2">Free vs Pro</p>
-        <p className="text-sm italic">No credit card required</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Free Plan */}
+          <div className="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-sm">
+            <h3 className="text-xl font-bold mb-2">Free</h3>
+            <p className="text-gray-600 dark:text-gray-400 mb-4">
+              Get started at no cost.
+            </p>
+            <ul className="text-left mb-6 space-y-2">
+              <li>✅ 5 Drops / month</li>
+              <li>✅ Max 2GB per file</li>
+              <li>✅ Basic analytics</li>
+              <li>🚫 No password protection</li>
+              <li>🚫 No gated links</li>
+              <li>🚫 No custom branding</li>
+            </ul>
+            <Button className="w-full">Get Started Free</Button>
+          </div>
+
+          {/* Pro Plan */}
+          <div className="border border-primary rounded-lg p-6 shadow-md bg-primary/10">
+            <h3 className="text-xl font-bold mb-2">Pro</h3>
+            <p className="text-gray-600 dark:text-gray-200 mb-4">
+              Unlock full potential.
+            </p>
+            <ul className="text-left mb-6 space-y-2">
+              <li>✅ Unlimited Drops</li>
+              <li>✅ Up to 10GB per file</li>
+              <li>✅ Advanced analytics</li>
+              <li>✅ Password-protected links</li>
+              <li>✅ Gated links</li>
+              <li>✅ Branded drop pages</li>
+            </ul>
+            <Button className="w-full">Upgrade to Pro – $30/mo</Button>
+          </div>
+        </div>
+        <p className="text-sm italic mt-6">No credit card required to start</p>
       </section>
 
       {/* Section 6: Call to Action (again) */}
@@ -104,9 +135,7 @@ export default function LandingPage() {
             placeholder="Enter your email"
             className="px-4 py-2 border border-gray-300 rounded-md w-full sm:w-auto"
           />
-          <Button variant={"default"}>
-            Get Started Free
-          </Button>
+          <Button variant={"default"}>Get Started Free</Button>
         </form>
       </section>
     </div>
